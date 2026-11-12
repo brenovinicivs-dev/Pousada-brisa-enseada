@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EBF2F6;
+    color: #000000;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 35px;
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(10px);            
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo_nav {
+    font-weight: bold;
+    color: #000000;
+    font-size: 19px;
+}
+
+.menu_links {
+    display: flex;
+    gap: 25px;
+}
+
+.menu_links a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.menu_links a:hover {
+    opacity: 0.7;
+}
+
+.pous {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img {
+    height: 250px;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.tex {
+    text-align: center;
+    font-size: medium;
+    font-family: cursive;
+}
+
+.acomo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.img_2 {
+    width: 100%;
+    height: 200px;                               
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.fundo_grid {
+    background-color: rgba(255, 255, 255, 0.45);                  
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+}
+
+.fundo_grid p {
+    height: 70px;                               
+    overflow: hidden;                           
+}
+
+.fundo_grid:hover{
+transition: 1.2s;
+transform: scale(1.1);
+}
+
+.img_3 {
+    width: 50%;            
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card-turismo {
+    display: flex;
+    align-items: center;  
+    gap: 20px;            
+    background-color: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-turismo:hover{
+    transition: 1.2s;
+    transform: scale(1.1x);
+}
+
+.bloco_img {
+    align-items: center;
+}
+
+.bloco_text {
+   text-align: left;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.45); 
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+}
+
+.text_fot {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.a_fot {
+    text-decoration: none;
+    color: #000000;
+    padding: 6px 12px;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.45); 
+    color: #000000;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    font-size: 18px;
+    padding: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.button:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.7); 
+    backdrop-filter: blur(23px);
+}
+
+.div_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+#modal_reserva {
+    border: none;
+    border-radius: 25px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+}
+
+#modal_reserva::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+#form_reserva {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+#form_reserva input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.btn_fechar {
+    float: right;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
